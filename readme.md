@@ -2,6 +2,15 @@
 [![Build Status](https://travis-ci.org/sjohns09/PID_Controller_wPartner.svg?branch=master)](https://travis-ci.org/sjohns09/PID_Controller_wPartner)
 [![Coverage Status](https://coveralls.io/repos/github/sjohns09/PID_Controller_wPartner/badge.svg?branch=master)](https://coveralls.io/github/sjohns09/PID_Controller_wPartner?branch=master)
 ---
+## DISCUSSION
+2017/9/25 Mkam
+1. The design was well set up for the practical implementation and with clear instruction on UML diagram. 
+2. Three tests were passed with two testing different given initial points and one testing saturation for the output.
+
+## TODO
+2017/9/25 Mkam
+1. Add a test for testing a saturation INSIDE the class method. Since a physical machine should have limitation for an input value, it is better for the control method to have a saturation to protect the system. 
+
 
 ## Overview
 
