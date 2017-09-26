@@ -19,7 +19,7 @@ using std::endl;
 int main()
 {
 
-  double setPoint = 0;
+  double setPoint = 50;
   double initialPoint = 0;
   int maxIterations = 10;
 
