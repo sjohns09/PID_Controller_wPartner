@@ -1,6 +1,6 @@
 # C++ Boilerplate
 [![Build Status](https://travis-ci.org/sjohns09/PID_Controller_wPartner.svg?branch=master)](https://travis-ci.org/sjohns09/PID_Controller_wPartner)
-[![Coverage Status](https://coveralls.io/repos/github/sjohns09/PID_Controller_wPartner/badge.svg?branch=master)](https://coveralls.io/github/sjohns09/PID_Controller_wPartner?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/sjohns09/PID_Controller_wPartner/badge.svg)](https://coveralls.io/github/sjohns09/PID_Controller_wPartner)
 ---
 ## DISCUSSION
 2017/9/25 Mkam
