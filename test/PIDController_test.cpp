@@ -1,20 +1,19 @@
-/** @file PIDController.cpp
+/** @file PIDController_test.cpp
  * @brief This tests the PIDController to ensure that it works within set standards
  *
  * @author Samantha Johnson
  * @date September 24, 2017
- * @copyright GNU Public License
+ * @copyright [2017] <Samantha Johnson>
  *
  */
 
-#include "PIDController.h"
 #include <gtest/gtest.h>
 #include <vector>
+#include "PIDController.h"
 
 using std::vector;
 
 TEST(PIDController_test, testComputeControlOutputSettlesToSetPointFromStartBelow) {
-
   double setPoint = 50;
   double initialPoint = 10;
   int maxIterations = 100;
@@ -26,7 +25,6 @@ TEST(PIDController_test, testComputeControlOutputSettlesToSetPointFromStartBelow
 }
 
 TEST(PIDController_test, testComputeControlOutputSettlesToSetPointFromStartAbove) {
-
   double setPoint = 50;
   double initialPoint = 70;
   int maxIterations = 100;
@@ -38,7 +36,6 @@ TEST(PIDController_test, testComputeControlOutputSettlesToSetPointFromStartAbove
 }
 
 TEST(PIDController_test, testComputeControlOutputNoHighOvershoot) {
-
   double setPoint = 50;
   double initialPoint = 25;
   int maxIterations = 100;
@@ -47,13 +44,10 @@ TEST(PIDController_test, testComputeControlOutputNoHighOvershoot) {
   vector<double> outputPID = PID.compute_control(maxIterations);
 
   double maxCompare = 1;
-  for (auto output : outputPID)
-  {
-    if (output > maxCompare)
-    {
+  for (auto output : outputPID) {
+    if (output > maxCompare) {
       maxCompare = output;
     }
   }
-
   EXPECT_NEAR(setPoint, maxCompare , 5);
 }

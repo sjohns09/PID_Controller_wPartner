@@ -4,7 +4,7 @@
  * @author Samantha Johnson
  * @author Michael Kam
  * @date September 24, 2017
- * @copyright GNU Public License
+ * @copyright [2017] <Samantha Johnson>
  *
  * @details This class allows for the parameters for a PID controller to be manually tuned and then calculates the control
  * of that system until a set stopping point is reached.
@@ -30,9 +30,9 @@ PIDController::PIDController(double setPoint, double initialPoint) {
 vector<double> PIDController::compute_control(int maxIterations) {
   vector<double> outputPID(maxIterations,0);
 
-  // TODO: Do PID calculations by making calls to PID functions and loop until max iterations is reached
   double error = _error;
-  for (auto& elements : outputPID) {
+  for (auto& elements : outputPID)
+  {
     elements = compute_proportional_control(_Kp, error)
         + compute_integral_control(_Ki, error, _timeStep, _integralSum)
         + compute_derivative_control(_Kd, _timeStep, error);
@@ -44,26 +44,25 @@ vector<double> PIDController::compute_control(int maxIterations) {
 double PIDController::compute_proportional_control(const double _Kp, const double _error) {
   double pControl = 0;
 
-  // TODO: Implement P controller
   pControl = _Kp * _error;
 
   return pControl;
 }
 
-double PIDController::compute_integral_control(const double _Ki, const double _error, const double _timeStep, double& _integralSum) {
+double PIDController::compute_integral_control(const double _Ki, const double _error,
+                                               const double _timeStep, double& _integralSum) {
   double iControl = 0;
 
-  // TODO: Implement I controller
   _integralSum = _integralSum + _error*_timeStep;
   iControl = _Ki * _integralSum;
 
   return iControl;
 }
 
-double PIDController::compute_derivative_control(const double _Kd, const double _timeStep, const double _derror) {
+double PIDController::compute_derivative_control(const double _Kd, const double _timeStep,
+                                                 const double _derror) {
   double dControl = 0;
 
-  // TODO: Implement D controller
   dControl = _Kd * (_derror / _timeStep);
 
   return dControl;

@@ -1,0 +1,8 @@
+** cppcheck errors - all reside within google-test directories
+
+
+Description	Resource	Path	Location	Type
+(cppcheck error) Address of local auto-variable assigned to a function parameter.	gtest-death-test.cc	/scratch-Debug@boilerplate-eclipse/[Source directory]/vendor/googletest/googletest/src	line 1001	cppcheck Problem
+(cppcheck error) Address of local auto-variable assigned to a function parameter.	gtest-death-test.cc	/scratch-Debug@boilerplate-eclipse/[Subprojects]/gtest/src	line 1001	cppcheck Problem
+(cppcheck error) Address of local auto-variable assigned to a function parameter.	gtest-death-test.cc	/scratch-Debug@boilerplate-eclipse/[Subprojects]/scratch/vendor/googletest/googletest/src	line 1001	cppcheck Problem
+

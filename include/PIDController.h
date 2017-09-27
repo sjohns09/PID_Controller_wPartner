@@ -4,7 +4,7 @@
  * @author Samantha Johnson
  * @author Michael Kam
  * @date September 24, 2017
- * @copyright GNU Public License
+ * @copyright [2017] <Samantha Johnson>
  *
  * @details This class allows for the parameters for a PID controller to be tuned and then calculates the control
  * of that system until a set stopping point is reached.
@@ -12,12 +12,11 @@
 
 #include <vector>
 
-#ifndef PIDCONTROLLER_H_
-#define PIDCONTROLLER_H_
+#ifndef INCLUDE_PIDCONTROLLER_H_
+#define INCLUDE_PIDCONTROLLER_H_
 
 class PIDController {
  public:
-
   /**
    * @brief A constructor that sets up the PID parameters for a system.
    * @param double setPoint is the target control point, double initialPoint is the starting point of the system,
@@ -52,7 +51,8 @@ class PIDController {
    * @return double which is the integral component of the PID
    * @details This method will utilize the function Ki*(integralSum + error*dt)
    */
-  double compute_integral_control(const double _Ki, const double _error, const double _timeStep, double& _integralSum);
+  double compute_integral_control(const double _Ki, const double _error,
+                                  const double _timeStep, double& _integralSum);
 
   /**
    * @brief A method that computes the derivative control for the PID controller
@@ -60,7 +60,8 @@ class PIDController {
    * @return double which is the derivative component of the PID
    * @details This method will utilize the function Kd*(derror/dt)
    */
-  double compute_derivative_control(const double _Kd, const double _timeStep, const double _derror);
+  double compute_derivative_control(const double _Kd, const double _timeStep,
+                                    const double _derror);
 };
 
-#endif /* PIDCONTROLLER_H_ */
+#endif /* INCLUDE_PIDCONTROLLER_H_ */

@@ -4,11 +4,10 @@
  * @author Samantha Johnson
  * @author Michael Kam
  * @date September 24, 2017
- * @copyright GNU Public License
+ * @copyright [2017] <Samantha Johnson>
  */
 
 #include <iostream>
-#include <lib.hpp>
 #include <vector>
 #include "PIDController.h"
 
@@ -16,9 +15,7 @@ using std::vector;
 using std::cout;
 using std::endl;
 
-int main()
-{
-
+int main() {
   double setPoint = 30;
   double initialPoint = 10;
   int maxIterations = 50;
@@ -41,6 +38,5 @@ int main()
   for (auto element : PID) {
     cout << element << endl;
   }
-
   return 0;
 }

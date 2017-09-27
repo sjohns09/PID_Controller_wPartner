@@ -1,0 +1,21 @@
+Done processing ./app/main.cpp
+./app/PIDController.cpp:27:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
+./app/PIDController.cpp:31:  Missing space after ,  [whitespace/comma] [3]
+./app/PIDController.cpp:35:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+./app/PIDController.cpp:44:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./app/PIDController.cpp:52:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./app/PIDController.cpp:53:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./app/PIDController.cpp:62:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+Done processing ./app/PIDController.cpp
+Done processing ./test/main.cpp
+Done processing ./test/test.cpp
+./test/PIDController_test.cpp:16:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./test/PIDController_test.cpp:24:  Missing space after ,  [whitespace/comma] [3]
+./test/PIDController_test.cpp:27:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./test/PIDController_test.cpp:35:  Missing space after ,  [whitespace/comma] [3]
+Done processing ./test/PIDController_test.cpp
+./include/PIDController.h:55:  Is this a non-const reference? If so, make const or use a pointer: double& _integralSum  [runtime/references] [2]
+Done processing ./include/PIDController.h
+Done processing ./include/lib.hpp
+Total errors found: 12
+
