@@ -54,7 +54,7 @@ double PIDController::compute_integral_control(const double _Ki, const double _e
   double iControl = 0;
 
   // TODO: Implement I controller
-  _integralSum = _integralSum + _error;
+  _integralSum = _integralSum + _error*_timeStep;
   iControl = _Ki * _integralSum;
 
   return iControl;

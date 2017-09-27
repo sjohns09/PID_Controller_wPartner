@@ -19,9 +19,9 @@ using std::endl;
 int main()
 {
 
-  double setPoint = 50;
-  double initialPoint = 0;
-  int maxIterations = 10;
+  double setPoint = 30;
+  double initialPoint = 10;
+  int maxIterations = 50;
 
   /**
    * @brief A constructor that sets up the PID parameters for a system.
